@@ -34,4 +34,4 @@
 
 ### Hooks
 .pre-commit-config.yaml
-
+.pre-commit-trivy-cache
