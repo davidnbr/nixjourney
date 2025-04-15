@@ -35,3 +35,6 @@
 ### Hooks
 .pre-commit-config.yaml
 .pre-commit-trivy-cache
+
+### Nix Built
+result
