@@ -25,3 +25,8 @@
       };
     };
 }
+
+# run: nix build .
+# you can run the program: ./result/bin/hello
+# nix run .
+# or you can: nix run .#hello
