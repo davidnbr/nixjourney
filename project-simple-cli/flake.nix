@@ -13,7 +13,6 @@
     in
     {
     packages.${system}.default = pkgs.writeShellScriptBin "cowsay-hello" ''
-      #!${pkgs.bashInteractive}/bin/bash
       ./cowsay_hello.sh
       '';
 
@@ -21,8 +20,8 @@
       name = "SimpleCLI";
       buildInputs = [ pkgs.bashInteractive pkgs.jq pkgs.cowsay self.packages.${system}.default];
       shellHook = ''
-      export SHELL=${pkgs.bashInteractive}/bin/bash
-      echo "Welcome to the Cowsay Project environment!"
+        echo "Welcome to the Cowsay Project environment!"
+        echo
       '';
     };
   };
